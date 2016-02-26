@@ -3,24 +3,17 @@
 Plugin Name: oobar
 Plugin URI: http://www.oik-plugins.com/oik-plugins/oobar
 Description: a sample OO plugin 
-Version: 1.0
+Version: 0.0.0
 Author: bobbingwide
-Author URI: http://www.bobbingwide.com
+Author URI: http://www.bobbingwide.com/author/bobbingwide
 License: GPL2
 */
 
-class foo {
-
-	function doer() { 
-		do_action( 'before_oobar_foobar' );
-		oobar_foobar();
-		do_action( "after_oobar_foobar" );
-	}
-} 
-
 class bar extends foo {
 	function __construct() {
-		parent::__construct;
+		self::__construct();
+		parent::__construct();
+		$this::__construct();
 	}
 	
 	function init() {
@@ -54,6 +47,17 @@ class bar extends foo {
  
 
 /* line whatever */ }
+
+
+class foo {
+
+	function doer() { 
+		do_action( 'before_oobar_foobar' );
+		oobar_foobar();
+		do_action( "after_oobar_foobar" );
+	}
+} 
+
 
 /**
  * Function invoked when file loaded
