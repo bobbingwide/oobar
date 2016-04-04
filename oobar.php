@@ -1,9 +1,9 @@
-<?php 
+<?php // (C) Copyright Bobbing Wide 2014-2016 
 /**
 Plugin Name: oobar
 Plugin URI: http://www.oik-plugins.com/oik-plugins/oobar
 Description: a sample OO plugin 
-Version: 0.0.0
+Version: 1.0.1
 Author: bobbingwide
 Author URI: http://www.bobbingwide.com/author/bobbingwide
 License: GPL2
